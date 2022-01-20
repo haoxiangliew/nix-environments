@@ -3,67 +3,58 @@ buildFHSUserEnv {
   name = "matlab-env";
   targetPkgs = p:
     (with p; [
-      mesa.osmesa
-      aspell
-      portaudio
-      pixman
-      harfbuzz
-      libxml2
-      qt5.qtbase
-      libffi
-      udev
-      coreutils
       alsaLib
-      dpkg
-      gcc48
-      freetype
-      glib
-      fontconfig
-      openssl
-      which
-      ncurses
-      jdk11
-      pam
-      dbus_glib
-      dbus
-      pango
-      gtk2-x11
-      nss
-      nspr
-      cups
       atk
-      gdk_pixbuf
+      cacert
       cairo
-      ncurses5
-      mesa_glu
-      zlib
-      libglvnd
+      cups
+      dbus
+      fontconfig
+      gdk-pixbuf
+      glib
+      glibc
+      glibcLocales
+      gtk3
+      jre
       libselinux
-      lxappearance
+      libsndfile
+      libxkbcommon
+      ncurses
+      nspr
+      nss
+      pam
+      pango
+      procps
+      python3
+      udev
+      unzip
+      xkeyboard_config
+      zlib
+
+      # 2021b Update
+      at-spi2-core
+      at_spi2_atk
+      gcc
+      gnome2.gtk
+      libGL_driver
+      libdrm
+      gfortran
     ]) ++ (with p.xorg; [
-      libX11
-      libXcursor
-      libXrandr
-      libXext
       libSM
-      libICE
       libX11
-      libXrandr
-      libXdamage
-      libXrender
-      libXfixes
       libXcomposite
       libXcursor
-      libxcb
+      libXdamage
+      libXext
+      libXfixes
+      libXft
       libXi
       libXinerama
-      libXScrnSaver
-      libXtst
+      libXrandr
+      libXrender
       libXt
-      libXft
+      libXtst
       libXxf86vm
-      libXpm
-      libXp
-      libXmu
+      libxcb
     ]);
 }
