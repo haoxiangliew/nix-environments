@@ -2,7 +2,8 @@ with import <nixpkgs> { };
 buildFHSUserEnv {
   name = "matlab-env";
   targetPkgs = p:
-    (with p; [
+    (with p;
+    [
       alsaLib
       atk
       cacert
@@ -14,31 +15,38 @@ buildFHSUserEnv {
       glib
       glibc
       glibcLocales
+      gst_all_1.gst-plugins-base
+      gst_all_1.gstreamer
       gtk3
-      jre
       libselinux
       libsndfile
-      libxkbcommon
-      ncurses
       nspr
       nss
       pam
       pango
       procps
       python3
-      udev
       unzip
-      xkeyboard_config
       zlib
+
+      # nixos specific
+      udev
+      jre
+      ncurses
 
       # 2021b Update
       at-spi2-core
-      at_spi2_atk
+      at-spi2-atk
       gcc
       gnome2.gtk
-      libGL_driver
+      libstdcxx5
+      mesa
       libdrm
       gfortran
+
+      # 2022a Update
+      libglvnd
+
     ]) ++ (with p.xorg; [
       libSM
       libX11
