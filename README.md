@@ -1,19 +1,19 @@
-- [[nix-environments](https://git.sr.ht/~haoxiangliew/nix-environments)](#org08b831b)
-  - [Installation](#org8655f1f)
-  - [`./arduino-env`](#org3592ef4)
-  - [`./ccstudio-env`](#orgc3775d3)
-  - [`./matlab-env`](#org9327e5b)
+- [[nix-environments](https://git.sr.ht/~haoxiangliew/nix-environments)](#org033701a)
+  - [Installation](#orgaf83d0a)
+  - [[ `./arduino-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/arduino-env)](#org6c092b1)
+  - [[ `./ccstudio-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/ccstudio-env)](#org0a91a65)
+  - [[ `./matlab-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/matlab-env)](#org82eacd2)
 
 
 
-<a id="org08b831b"></a>
+<a id="org033701a"></a>
 
 # [nix-environments](https://git.sr.ht/~haoxiangliew/nix-environments)
 
 This repository contains my configuration for FHS User Environments on NixOS for apps that misbehave due to NixOS not being FHS compliant.
 
 
-<a id="org8655f1f"></a>
+<a id="orgaf83d0a"></a>
 
 ## Installation
 
@@ -21,9 +21,9 @@ This repository contains my configuration for FHS User Environments on NixOS for
 -   Follow instructions below for the respective folder
 
 
-<a id="org3592ef4"></a>
+<a id="org6c092b1"></a>
 
-## `./arduino-env`
+## [ `./arduino-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/arduino-env)
 
 Out-of-tree modules, such as ones from unofficial Arduino boards, may require installation of a vendor-provided compiler. This environment allows you to do so.
 
@@ -32,9 +32,9 @@ Out-of-tree modules, such as ones from unofficial Arduino boards, may require in
 -   Run `arduino`, making sure you are in `arduino-env` when doing so
 
 
-<a id="orgc3775d3"></a>
+<a id="org0a91a65"></a>
 
-## `./ccstudio-env`
+## [ `./ccstudio-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/ccstudio-env)
 
 TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and fully operational with TI LaunchPad w/ MSP432
 
@@ -48,9 +48,9 @@ TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and 
 -   If MSP432 SimpleLink, or likewise dependencies are needed, installing to their default directories should be picked up by CCStudio
 
 
-<a id="org9327e5b"></a>
+<a id="org82eacd2"></a>
 
-## `./matlab-env`
+## [ `./matlab-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/matlab-env)
 
 MATLAB runs with hardware-acceleration in an FHS User Environment just fine. Tested and fully operational with scripts.
 

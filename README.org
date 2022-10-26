@@ -8,13 +8,13 @@ This repository contains my configuration for FHS User Environments on NixOS for
 - Copy respective folders to the location you want, ideally ~/home/<username>~
 - Follow instructions below for the respective folder
 
-** ~./arduino-env~
+** [[https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/arduino-env][ ~./arduino-env~ ]]
 Out-of-tree modules, such as ones from unofficial Arduino boards, may require installation of a vendor-provided compiler. This environment allows you to do so.
 - ~nix-build fhs-env.nix~
 - ~./arduino-env.sh~
 - Run ~arduino~, making sure you are in ~arduino-env~ when doing so
 
-** ~./ccstudio-env~
+** [[https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/ccstudio-env][ ~./ccstudio-env~ ]]
 TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and fully operational with TI LaunchPad w/ MSP432
 - ~nix-build fhs-env.nix~
 - Create a directory for the installer, ideally ~./installer~
@@ -25,7 +25,7 @@ TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and 
 - Run ~ccstudiio~, making sure you are in ~ccstudio-env~ when doing so
 - If MSP432 SimpleLink, or likewise dependencies are needed, installing to their default directories should be picked up by CCStudio
 
-** ~./matlab-env~
+** [[https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/matlab-env][ ~./matlab-env~ ]]
 MATLAB runs with hardware-acceleration in an FHS User Environment just fine. Tested and fully operational with scripts.
 - ~nix-build fhs-env.nix~
 - Create a directory for the installer, ideally ~./installer~
