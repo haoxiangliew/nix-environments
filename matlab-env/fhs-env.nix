@@ -52,6 +52,9 @@ buildFHSUserEnv {
       # 2022a Update
       libglvnd
 
+      # 2022b Update
+      libuuid
+
     ]) ++ (with p.xorg; [
       libSM
       libX11
