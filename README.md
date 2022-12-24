@@ -1,19 +1,19 @@
-- [[nix-environments](https://git.sr.ht/~haoxiangliew/nix-environments)](#org033701a)
-  - [Installation](#orgaf83d0a)
-  - [[ `./arduino-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/arduino-env)](#org6c092b1)
-  - [[ `./ccstudio-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/ccstudio-env)](#org0a91a65)
-  - [[ `./matlab-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/matlab-env)](#org82eacd2)
+- [[nix-environments](https://github.com/haoxiangliew/nix-environments)](#org1abe070)
+  - [Installation](#orgec504dd)
+  - [[ `./arduino-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/arduino-env)](#org65f353f)
+  - [[ `./ccstudio-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/ccstudio-env)](#orgc229624)
+  - [[ `./matlab-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/matlab-env)](#org20c8bf7)
 
 
 
-<a id="org033701a"></a>
+<a id="org1abe070"></a>
 
-# [nix-environments](https://git.sr.ht/~haoxiangliew/nix-environments)
+# [nix-environments](https://github.com/haoxiangliew/nix-environments)
 
 This repository contains my configuration for FHS User Environments on NixOS for apps that misbehave due to NixOS not being FHS compliant.
 
 
-<a id="orgaf83d0a"></a>
+<a id="orgec504dd"></a>
 
 ## Installation
 
@@ -21,9 +21,9 @@ This repository contains my configuration for FHS User Environments on NixOS for
 -   Follow instructions below for the respective folder
 
 
-<a id="org6c092b1"></a>
+<a id="org65f353f"></a>
 
-## [ `./arduino-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/arduino-env)
+## [ `./arduino-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/arduino-env)
 
 Out-of-tree modules, such as ones from unofficial Arduino boards, may require installation of a vendor-provided compiler. This environment allows you to do so.
 
@@ -32,9 +32,9 @@ Out-of-tree modules, such as ones from unofficial Arduino boards, may require in
 -   Run `arduino`, making sure you are in `arduino-env` when doing so
 
 
-<a id="org0a91a65"></a>
+<a id="orgc229624"></a>
 
-## [ `./ccstudio-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/ccstudio-env)
+## [ `./ccstudio-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/ccstudio-env)
 
 TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and fully operational with TI LaunchPad w/ MSP432
 
@@ -48,9 +48,9 @@ TI's Code Composer Studio runs in an FHS User Environment just fine. Tested and 
 -   If MSP432 SimpleLink, or likewise dependencies are needed, installing to their default directories should be picked up by CCStudio
 
 
-<a id="org82eacd2"></a>
+<a id="org20c8bf7"></a>
 
-## [ `./matlab-env` ](https://git.sr.ht/~haoxiangliew/nix-environments/tree/master/item/matlab-env)
+## [ `./matlab-env` ](https://github.com/haoxiangliew/nix-environments/tree/master/matlab-env)
 
 MATLAB runs with hardware-acceleration in an FHS User Environment just fine. Tested and fully operational with scripts.
 
